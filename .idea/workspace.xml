@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c3ebe567-4e3d-4892-9356-2d06826d3f69" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/ConnectRoute.js" afterPath="$PROJECT_DIR$/routes/ConnectRoute.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stores/ConnectionStore.js" afterPath="$PROJECT_DIR$/stores/ConnectionStore.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ConnectRoute.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ConnectRoute.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/ConnectRoute.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="954">
-              <caret line="78" column="72" lean-forward="true" selection-start-line="78" selection-start-column="72" selection-end-line="78" selection-end-column="72" />
+            <state relative-caret-position="-535">
+              <caret line="38" column="10" lean-forward="true" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -58,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConnectionStore.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ConnectionStore.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stores/ConnectionStore.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="83" column="5" lean-forward="false" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
+            <state relative-caret-position="240">
+              <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -71,8 +70,8 @@
       <file leaf-file-name="Universe.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/Universe.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="40" column="97" lean-forward="false" selection-start-line="40" selection-start-column="73" selection-end-line="40" selection-end-column="97" />
+            <state relative-caret-position="427">
+              <caret line="34" column="18" lean-forward="true" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -148,9 +147,9 @@
         <option value="$PROJECT_DIR$/index.ios.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/RouterManager.js" />
-        <option value="$PROJECT_DIR$/stores/ConnectionStore.js" />
         <option value="$PROJECT_DIR$/routes/Universe.js" />
         <option value="$PROJECT_DIR$/routes/ConnectRoute.js" />
+        <option value="$PROJECT_DIR$/stores/ConnectionStore.js" />
       </list>
     </option>
   </component>
@@ -205,6 +204,11 @@
               <item name="UniverseIOS" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="UniverseIOS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UniverseIOS" type="462c0819:PsiDirectoryNode" />
+              <item name="stores" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -248,12 +252,12 @@
       <option name="presentableId" value="Default" />
       <updated>1501250141513</updated>
       <workItem from="1501250160703" duration="18200000" />
-      <workItem from="1501318667317" duration="4121000" />
+      <workItem from="1501318667317" duration="4312000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22321000" />
+    <option name="totallyTimeSpent" value="22512000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1032" extended-state="0" />
@@ -437,31 +441,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stores/ConnectionStore.js">
+    <entry file="file://$PROJECT_DIR$/routes/ConnectRoute.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="83" column="5" lean-forward="false" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="-535">
+          <caret line="38" column="10" lean-forward="true" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/Universe.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="40" column="97" lean-forward="false" selection-start-line="40" selection-start-column="73" selection-end-line="40" selection-end-column="97" />
+        <state relative-caret-position="427">
+          <caret line="34" column="18" lean-forward="true" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/ConnectRoute.js">
+    <entry file="file://$PROJECT_DIR$/stores/ConnectionStore.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="954">
-          <caret line="78" column="72" lean-forward="true" selection-start-line="78" selection-start-column="72" selection-end-line="78" selection-end-column="72" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="240">
+          <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>

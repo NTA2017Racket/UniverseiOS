@@ -5,7 +5,7 @@ import RouterManager from '../RouterManager';
 
 class ConnectionStore {
 	@observable CurrentState = 'notConnected';
-	@observable hostname = '192.168.0.110';
+	@observable hostname = '';
 	@observable port = '8080';
 	@observable ButtonError = '';
 	currentErrorTimeout = null;
