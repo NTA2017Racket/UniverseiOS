@@ -76,7 +76,7 @@ class ConnectPage extends Component {
 						<FormLabel>Hostname and IP</FormLabel>
 						<FormInput onChangeText={(text) => ConnectionStore.setHostname(text)} defaultValue={ConnectionStore.hostname} placeholder={'z.B 192.168.0.110'}/>
 						<FormLabel>Port</FormLabel>
-						<FormInput onChangeText={(text) => ConnectionStore.setPort(text)} defaultValue={ConnectionStore.port} placeholder={'z.B 8080'}/>
+						<FormInput keyboardType={'numeric'} onChangeText={(text) => ConnectionStore.setPort(text)} defaultValue={ConnectionStore.port} placeholder={'z.B 8080'}/>
 						<FormLabel>Username</FormLabel>
 						<FormInput onChangeText={(text) => ConnectionStore.setUsername(text)} defaultValue={ConnectionStore.username}/>
 						<View style={styles.buttonStyle}>
