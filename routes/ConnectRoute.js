@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {View, Image, Text, StyleSheet, PixelRatio, Dimensions, TextInput} from 'react-native';
 import ParallaxScrollView from 'react-native-parallax-scroll-view';
-import { FormLabel, FormInput,  } from 'react-native-elements'
+import { FormLabel, FormInput,  } from 'react-native-elements';
 import ButtonComponent, {RoundButton} from 'react-native-button-component';
 import ConnectionStore from '../stores/ConnectionStore';
 import {observer} from 'mobx-react';
@@ -74,11 +74,11 @@ class ConnectPage extends Component {
 					)}>
 					<View>
 						<FormLabel>Hostname and IP</FormLabel>
-						<FormInput onChangeText={(text) => ConnectionStore.setHostname(text)}/>
+						<FormInput onChangeText={(text) => ConnectionStore.setHostname(text)} defaultValue={ConnectionStore.hostname} placeholder={'z.B 192.168.0.110'}/>
 						<FormLabel>Port</FormLabel>
-						<FormInput onChangeText={(text) => ConnectionStore.setPort(text)} defaultValue={'8080'}/>
+						<FormInput onChangeText={(text) => ConnectionStore.setPort(text)} defaultValue={ConnectionStore.port} placeholder={'z.B 8080'}/>
 						<FormLabel>Username</FormLabel>
-						<FormInput onChangeText={(text) => ConnectionStore.setUsername(text)} defaultValue={'anonym'}/>
+						<FormInput onChangeText={(text) => ConnectionStore.setUsername(text)} defaultValue={ConnectionStore.username}/>
 						<View style={styles.buttonStyle}>
 							<RoundButton states={this.ButtonStates} buttonState={ConnectionStore.CurrentState}/>
 						</View>
@@ -113,8 +113,7 @@ const styles = StyleSheet.create({
 		paddingLeft: 15
 	},
 	container: {
-		flex: 1,
-		backgroundColor: 'black'
+		flex: 1
 	},
 	background: {
 		position: 'absolute',

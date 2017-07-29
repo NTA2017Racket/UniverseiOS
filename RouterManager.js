@@ -15,7 +15,7 @@ class RouterManager {
 	goToUniverse() {
 		this.navigator.push({
 			component: Universe,
-			title: 'Universe (Connected)'
+			title: 'Universe'
 		});
 	}
 

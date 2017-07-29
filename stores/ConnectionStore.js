@@ -5,13 +5,15 @@ import RouterManager from '../RouterManager';
 
 class ConnectionStore {
 	@observable CurrentState = 'notConnected';
-	@observable hostname = '';
+	@observable hostname = '192.168.0.110';
 	@observable port = '8080';
 	@observable ButtonError = '';
 	currentErrorTimeout = null;
 	@observable ErrorAnimation = 'fadeIn';
 	netClient = null;
 	@observable username = 'anonym';
+	@observable degree = '';
+	@observable prompt = false;
 
 	setCurrentState(newState) {
 		this.CurrentState = newState;
@@ -39,9 +41,7 @@ class ConnectionStore {
 		this.netClient = net.createConnection({port: parseInt(this.port), hostname: this.hostname});
 		const self = this;
 		this.netClient.on('connect', function () {
-			if (self.username) {
-				self.netClient.write('c Noim\n');
-			}
+			self.changeUsername();
 			RouterManager.goToUniverse();
 			self.CurrentState = 'notConnected';
 		});
@@ -85,6 +85,19 @@ class ConnectionStore {
 
 	setUsername(newUsername) {
 		this.username = newUsername;
+	}
+
+	changeUsername(username) {
+		this.prompt = false;
+		const self = this;
+		try {
+			if (self.username) {
+				self.username = username || self.username;
+				self.netClient.write('c ' + self.username + '\n');
+			}
+		} catch (e) {
+			console.log(e);
+		}
 	}
 }
 
