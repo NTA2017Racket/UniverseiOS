@@ -2,6 +2,8 @@ import {observable} from 'mobx';
 import net from 'net';
 import RouterManager from '../RouterManager';
 
+//Just for debugging react native on a device.
+//jsCodeLocation = [NSURL URLWithString:@"http://192.168.0.110:8081/index.ios.bundle?platform=ios&dev=true&minify=false"];
 
 class ConnectionStore {
 	@observable CurrentState = 'notConnected';
@@ -38,22 +40,31 @@ class ConnectionStore {
 	}
 
 	_connect() {
-		this.netClient = net.createConnection({port: parseInt(this.port), hostname: this.hostname});
-		const self = this;
-		this.netClient.on('connect', function () {
-			self.changeUsername();
-			RouterManager.goToUniverse();
-			self.CurrentState = 'notConnected';
-		});
-		this.netClient.on('close', function () {
-			RouterManager.resetToInit();
-			setTimeout(function () {
+		try {
+			this.netClient = net.createConnection({port: parseInt(this.port), host: this.hostname});
+			const self = this;
+			this.netClient.on('connect', function () {
+				self.changeUsername();
+				RouterManager.goToUniverse();
 				self.CurrentState = 'notConnected';
-			}, 500);
-		});
-		this.netClient.on('error', (e) => {
+			});
+			this.netClient.on('close', function () {
+				RouterManager.resetToInit();
+				setTimeout(function () {
+					self.CurrentState = 'notConnected';
+				}, 500);
+			});
+			this.netClient.on('error', (e) => {
+				self.setButtonError(e.message);
+				console.error(e);
+				//throw e;
+			});
+		} catch (e) {
+			console.error(e);
+			//throw e;
 			self.setButtonError(e.message);
-		});
+		}
+
 	}
 
 	connect() {
