@@ -28,4 +28,6 @@ react-native link
 # You are ready, go into the ios folder and open the xcode project and build the app.
 ```
 
+[Original Repo on Github](https://github.com/NTA2017Racket/UniverseIOS)
+
 Background source: [link](http://maxpixel.freegreatpicture.com/Cosmos-Universe-Galaxy-Space-Tree-Background-1721695)
